@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d9dddc;
+}
+/* 
+.container {
+  padding-inline: 20px;
+} */
+
+.header-container {
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  /* margin-top: 20px; */
+}
+
+#logo img {
+  width: 130px;
+  height: 110px;
+  object-fit: contain;
+}
+
+#cart h1 {
+  font-family: Poppins, sans-serif;
+  font-size: large;
+  font-weight: 600;
+  color: orange;
+}
+
+.cart_btn {
+  padding: 10px 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+  border: none;
+  background-color: orange;
+  border-radius: 8px;
+  transition: all;
+  animation-duration: 300ms;
+  animation-timing-function: ease-in;
+}
+
+.cart_btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.cart_btn span {
+  color: white;
+  font-weight: 500;
+  font-family: Poppins;
+}
+
+.cart_btn .fa {
+  color: white;
+}
+
+section {
+  padding: 10px 25px;
+}
+
+.cart-product-container {
+  height: 208px;
+  padding-block: 10px;
+  margin-top: 18px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.cart-product-container-title {
+  font-family: Poppins;
+  color: #1e1e1e;
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 1px solid rgb(193, 192, 192);
+  padding-bottom: 10px;
+  padding-inline: 20px;
+}
+
+.cart-product {
+  display: flex;
+  /* border: 1px solid red; */
+  /* padding: 10px 20px; */
+}
+
+.cart-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-content img {
+  width: 120px;
+  height: 120px;
+}
+
+.details {
+  font-family: Poppins;
+  font-size: medium;
+  color: #1e1e1e;
+  padding-top: 10px;
+}
+
+.details p {
+  width: 150px;
+}
+
+.details .small {
+  font-size: small;
+  color: #454444;
+  margin-top: 4px;
+}
+
+.money {
+  margin-left: auto;
+  padding-top: 10px;
+  padding-right: 20px;
+}
+
+.money p {
+  font-family: Poppins;
+  font-size: large;
+  font-weight: 500;
+  color: #1e1e1e;
+}
+
+.per {
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  font-family: Poppins;
+  font-size: small;
+  /* padding: 10px 20px; */
+}
+
+.per span {
+  text-decoration: line-through black;
+}
+
+.per h3 {
+  font-size: small;
+  font-family: Poppins;
+  font-weight: 400;
+  background-color: rgb(253, 216, 149);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 20px;
+}
+
+.rem {
+  background-color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 3px;
+}
+
+.rem:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 5px -3px rgb(0 0 0 / 0.1);
+  background-color: rgb(253, 216, 149);
+}
+
+.rem i {
+  color: orange;
+  font-size: larger;
+}
+
+.rem span {
+  margin-left: 5px;
+  color: orange;
+}
+button {
+  border: none;
+}
+
+.fa.fa-minus {
+  color: white;
+  background-color: orange;
+  font-size: larger;
+  padding: 5px 8px;
+  border-radius: 5px;
+  /* margin-right: 5px; */
+}
+
+.fa.fa-plus {
+  color: white;
+  background-color: orange;
+  font-size: larger;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+.num span {
+  font-family: Poppins;
+}
+
+.bag {
+  width: 80px;
+  height: 50%;
+}
+
+.face {
+  height: 70px;
+}
+
+.cart-summary {
+  background-color: white;
+}
+
+.cart-summary-title {
+  font-family: Poppins;
+  color: #1e1e1e;
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 1px solid rgb(193, 192, 192);
+  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-inline: 20px;
+}
+
+.cart-summary-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.delivery h3 {
+  font-weight: 500;
+  font-size: small;
+  /* text-align: center; */
+  border-bottom: 1px solid rgb(193, 192, 192);
+  padding-bottom: 10px;
+}
+
+.cart-summary-btn {
+  text-align: center;
+  padding: 10px 0px;
+  background-color: orange;
+  margin: 10px 50px;
+  border-radius: 8px;
+}
+
+.cart-summary-btn:hover {
+  color: grey;
+}
+
+.cart-summary-btn p {
+  color: white;
+}
