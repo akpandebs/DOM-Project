@@ -68,6 +68,8 @@ body {
 
 section {
   padding: 10px 25px;
+  max-width: 700px;
+  margin-inline: auto;
 }
 
 .cart-product-container {
@@ -78,14 +80,20 @@ section {
   border-radius: 5px;
 }
 
+.head {
+  border-bottom: 1px solid rgb(193, 192, 192);
+  padding-bottom: 10px;
+  padding-inline: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .cart-product-container-title {
   font-family: Poppins;
   color: #1e1e1e;
   font-size: 18px;
   font-weight: 500;
-  border-bottom: 1px solid rgb(193, 192, 192);
-  padding-bottom: 10px;
-  padding-inline: 20px;
 }
 
 .cart-product {
@@ -99,9 +107,15 @@ section {
   justify-content: space-between;
 }
 
-.cart-content img {
+.cart-content .img {
   width: 120px;
   height: 120px;
+  padding: 15px;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
 }
 
 .details {
@@ -187,6 +201,11 @@ section {
 }
 button {
   border: none;
+  background: none;
+}
+
+.red {
+  color: red;
 }
 
 .fa.fa-minus {
@@ -208,6 +227,7 @@ button {
 
 .num span {
   font-family: Poppins;
+  padding-inline: 6px;
 }
 
 .bag {
@@ -243,6 +263,7 @@ button {
 .delivery h3 {
   font-weight: 500;
   font-size: small;
+  padding-left: 20px;
   /* text-align: center; */
   border-bottom: 1px solid rgb(193, 192, 192);
   padding-bottom: 10px;
@@ -262,4 +283,10 @@ button {
 
 .cart-summary-btn p {
   color: white;
+}
+
+.text h3 {
+  font-weight: 500;
+  font-size: small;
+  padding-bottom: 10px;
 }
